@@ -15,21 +15,32 @@
   <body>
     <div class="havaDurumu-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
         </form>
       </header>
 
       <main>
-        <div>
-          <h1>Paris</h1>
-          <p>
-            Tuesday 10:51, overcast cloud<br />
-            Humidity: 77%, Wind: 7.2km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Paris</h1>
+            <p class="weather-app-details">
+              Tuesday 10:51, overcast cloud<br />
+              Humidity: <strong>77%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-contianer">
+            <div class="weather-app-icon">☀️</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-unit">C°</div>
+          </div>
         </div>
-        <div>☀️ 12 C°</div>
       </main>
 
       <footer>
