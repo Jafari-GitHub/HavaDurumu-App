@@ -15,12 +15,13 @@
   <body>
     <div class="havaDurumu-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="search" class="search-form-button" />
         </form>
@@ -29,7 +30,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Paris</h1>
+            <h1 class="weather-app-city" id="city">Paris</h1>
             <p class="weather-app-details">
               Tuesday 10:51, overcast cloud<br />
               Humidity: <strong>77%</strong>, Wind: <strong>7.2km/h</strong>
@@ -44,7 +45,7 @@
       </main>
 
       <footer>
-        This project was Coded by
+        This Project was Coded by
         <a href="https://github.com/Jafari-GitHub" target="_blank"></a> Masoma.J
         open-sourced on
         <a
@@ -52,7 +53,7 @@
           target="_blank"
           >GitHub</a
         >
-        hosted on
+        Hosted on
         <a
           href="https://app.netlify.com/teams/jafari-github/sites"
           target="_blank"
@@ -61,4 +62,5 @@
       </footer>
     </div>
   </body>
+  <script src="src/script.js"></script>
 </html>
