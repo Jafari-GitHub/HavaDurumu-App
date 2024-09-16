@@ -46,7 +46,31 @@ function handleSearchSubmit(event) {
   let searchInput = document.querySelector("#search-form-input");
   searchCity(searchInput.value);
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHTML = "";
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="weather-forcast-day">
+      <div class="weather-forcast-date">${day}</div>
+      <div class="weather-forcast-icon">🌤️</div>
+      <div class="weather-forcast-temperatures">
+        <div class="weather-forcast-temperature">
+          <strong>15°</strong>
+        </div>
+        <div class="weather-forcast-temperature">9°</div>
+      </div>
+      </div>
+    
+
+  `;
+  });
+  forecastElement.innerHTML = forecastHTML;
+}
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 searchCity("Kabul");
+displayForecast();
